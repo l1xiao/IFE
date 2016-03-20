@@ -3,7 +3,7 @@
     padding: 20px;
     background:#eee;
     border:solid 1px #999;
-    height:530px;
+    min-height:530px;
 }
 
 .left {
