@@ -127,6 +127,9 @@ p {
     border-color: #2e6da4;
     border-radius: 5px;
 }
+.list form textarea {
+    width:90%;
+}
 #footer {
     background:black;
     color:white;
