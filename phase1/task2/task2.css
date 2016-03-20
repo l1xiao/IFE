@@ -3,21 +3,38 @@ body {
     margin:0px;
 }
 #header {
-    background-color:black;
-    height:40px;
+    background-color:#443F3F;
+    height:80px;
+    line-height: 80px;
+
+}
+#header ul li a {
+    color:white;
+    text-decoration:none;
 }
 #header ul {
     margin:0px;
 }
 #header ul li {
     float:right;
+    margin-left:20px;
+
+}
+#header img {
+    float:left;
+    height:60px;
+    margin-left:15px;
+    margin-top:10px;
+    
 }
 
 #content{
     margin:15px;
 }
 
-p {text-indent: 2em;}
+p {
+    text-indent: 2em;
+}
 
 .list{
     margin-top:15px;
@@ -34,17 +51,66 @@ p {text-indent: 2em;}
     color:gray;
 }
 
+.list ol li {
+    font-weight:bold;
+}
+
+.list table {
+    width:100%;
+    /*border:solid 1px gray;*/
+    border-collapse:collapse;
+    text-align:left;
+}
+.list table, td{
+    border:1px solid #DADADA;
+}
+.list table th {
+    border:1px solid black;
+    background:black;
+    color:white;
+}
+
+#lastline {
+    background:#DADADA;
+}
+
 .image {
-    width:60px;
-    border: solid 1px;
+    width:80px;
+    border: solid 1px #DCDCDC;
     padding:5px;
     margin:10px;
+    margin-left:20px;
 }
 .image div{
+    margin-bottom:5px;
     text-align:center;
     font-size:10px;
 }
 .image img{
     width:100%;
     
+}
+#sidebartitle {
+    border-style:none none none solid;
+    border-width:4px;
+    border-color:#DADADA;
+    padding:10px;
+    height:30px;
+    font-size:30px;
+    font-weight:bold;
+}
+.list form {
+    text-align:center;
+}
+label {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}
+#footer {
+    background:black;
+    color:white;
+    text-align:center;
+    height:80px;
+    line-height: 80px;
 }

@@ -6,6 +6,7 @@
     </head>
     <body >
         <div id="header">
+            <img src="logo.png" alt="" />
             <ul>
                 <li><a href="">导航链接一</a></li>
                 <li><a href="">导航链接二</a></li>
@@ -45,28 +46,26 @@
                     <img src="1.png" alt="" />
                 </div>
                 <div class="image">
-                <div >好看的图片</div>
-                <img src="1.png" alt="" />
+                    <div >好看的图片</div>
+                    <img src="1.png" alt="" />
                 </div>
-                
-               
             </div>
             <div class="list">
                 <h2>最后一篇文章一级标题</h2>
                 <h3>文章二级标题</h3>
-                文章作者 文章发表时间
+                <h4>文章作者 文章发表时间</h4>
                 <ol>
                     <li>排名1</li>
                     <li>排名2</li>
                     <li>排名3</li>
                 </ol>
                 下面是一个表格，给表格加了一个border=&quot;1&quot;，好让你看出来是一个表格
-                <table border="1">
+                <table >
                     <tbody>
                         <tr>
-                            <td>表头</td>
-                            <td>表头</td>
-                            <td>表头</td>
+                            <th>表头</th>
+                            <th>表头</th>
+                            <th>表头</th>
                         </tr>
                         <tr>
                             <td>表内容单元格</td>
@@ -88,7 +87,7 @@
                             <td>表内容单元格</td>
                             <td><a href="">操作</a></td>
                         </tr>
-                        <tr>
+                        <tr id="lastline">
                             <td>总计</td>
                             <td colspan="2">1000</td>
                         </tr>
@@ -96,29 +95,49 @@
                 </table>
             </div>
             <div class="list">
-                <h2>这里是一个侧栏，这是侧栏的标题</h2>
-                <h2>侧栏注册窗口标题</h2>
+                <div id="sidebartitle">这里是一个侧栏，这是侧栏的标题</div>
                 <form action="">
-                    请输入邮箱地址：
-                    <input type="text" value="这是一个文本输入框" /> 邮箱地址请按照要求格式输入 请输入密码：
-                    <input type="text" value="这是一个文本输入框" /> 请重复输入密码：
-                    <input type="text" value="这是一个文本输入框" /> 密码请为6-16位英文数字 性别：
-                    <input type="radio" name="gender" value="" />男
-                    <input type="radio" name="gender" value="" />女 城市：
-                    <select name="city" id="">
-                        <option value="北京" checked="">北京</option>
-                    </select>
-                    爱好：
-                    <input type="checkbox" />运动
-                    <input type="checkbox" />艺术
-                    <input type="checkbox" />科学 个人描述：
-                    <textarea rows="10" cols="30"></textarea>
+                    <div>
+                        <label>请输入邮箱地址：</label>
+                        <input type="text" value="这是一个文本输入框" />
+                        <!--<small>邮箱地址请按照要求格式输入</small>-->
+                    </div>
+                    <div>
+                        <label>请输入密码：</label>
+                        <input type="password" value="这是一个文本输入框" />
+                    </div>
+                    <div>
+                        <label>请重复输入密码：</label>
+                        <input type="password" value="这是一个文本输入框" />
+                        <!--密码请为6-16位英文数字-->
+                    </div>
+                    <div>
+                        <label>性别：</label>
+                        <input type="radio" name="gender" value="" />男
+                        <input type="radio" name="gender" value="" />女
+                    </div>
+                    <div>
+                        <label>城市：</label>
+                        <select name="city" id="">
+                            <option value="北京" checked="">北京</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>爱好：</label>
+                        <input type="checkbox" />运动
+                        <input type="checkbox" />艺术
+                        <input type="checkbox" />科学
+                    </div>
+                    <div>
+                        <label>个人描述：</label>
+                        <textarea rows="10" cols="30"></textarea>
+                    </div>
                     <input type="button" value="确认提交" />
                 </form>
             </div>
         </div>
-        <div>
-            版权所有&copy;
+        <div id="footer">
+            <div id="copy">版权所有&copy;<div>
         </div>
     </body>
 </html>
