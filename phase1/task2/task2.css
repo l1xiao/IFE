@@ -1,0 +1,50 @@
+body {
+    background-color:#DADADA;
+    margin:0px;
+}
+#header {
+    background-color:black;
+    height:40px;
+}
+#header ul {
+    margin:0px;
+}
+#header ul li {
+    float:right;
+}
+
+#content{
+    margin:15px;
+}
+
+p {text-indent: 2em;}
+
+.list{
+    margin-top:15px;
+    background:white;
+    padding:15px;
+    border-style:none solid solid none;
+    border-width: 0 1px 1px 0;
+    border-right-color: gray;
+    border-bottom-color: gray;
+    
+}
+
+.list h3 ,h4{
+    color:gray;
+}
+
+.image {
+    width:60px;
+    border: solid 1px;
+    padding:5px;
+    margin:10px;
+}
+.image div{
+    text-align:center;
+    font-size:10px;
+}
+.image img{
+    width:100%;
+    
+}
