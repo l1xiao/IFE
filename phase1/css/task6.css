@@ -8,16 +8,21 @@ body {
     background-color: gray;
 }
 
-top, content, what, when, how, side, main{
+top, content, what, when, how, side, main, section, paper{
     display: block;
 }
 
-content {
+paper {
     position: relative;
     margin:auto;
     width: 980px;
     height: 1386px;
     background-color:white;
+}
+content {
+    width:892px;
+    height:100%;
+    margin:0 auto;
 }
 
 top {
@@ -49,17 +54,36 @@ time {
     font-family: 黑体；
 }
 section {
-    position:relative;
-    left:0;
-    margin:20px auto;
+    /*这里注释掉float后，两个section会重叠，原因?*/
+    float:left;
+    margin:30px auto;
     width:892px;
 }
 section main {
     float:left;
 }
 .image1 {
+    background-image: url("../img/task6_banner.jpg");
     width:641px;
     height: 301px;
+    position:relative;
+}
+.image1 div:first-child {
+    /*position:absolute;
+    left:0;*/
+    float:left;
+    height: 301px;
+    width: 191px;
+    opacity: 0.5;
+    background-color: green;
+}
+.image1 div:last-child {
+    position:absolute;
+    right: 0;
+    height: 301px;
+    width: 191px;
+    opacity: 0.5;
+    background-color: red;
 }
 .three-col {
     width:641px;
