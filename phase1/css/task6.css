@@ -8,7 +8,7 @@ body {
     background-color: gray;
 }
 
-top, content, what, when, how, side, main, section, paper{
+top, content,zero, words what, list, when, how, side, main, section, paper, left, right{
     display: block;
 }
 
@@ -56,7 +56,7 @@ time {
 section {
     /*这里注释掉float后，两个section会重叠，原因?*/
     float:left;
-    margin:30px auto;
+    margin:20px auto;
     width:892px;
 }
 section main {
@@ -174,4 +174,94 @@ css div:nth-child(3) {
     margin-left:3px;
     font-size: 12px;
 }
+left {
+    width:415px;
+    float: left;
+}
+the {
+    font-size: 72px;
+    color:#f5e327;
+    font-weight: bold;
+    font-style: italic;
+}
+left div:first-child p{
+    font-family: 黑体;
+    font-size: 42px;
+    font-weight: bold;
+    color:#11465b;
+}
+left div:first-child p:last-child{
+    font-size: 33px;
+    margin-bottom: 10px;
+}
+left div:first-child {
+    border-bottom: solid 2px;
+}
+left div:nth-child(2) p span{
+    font-size: 70px;
+    color:#f5e327;
+    font-family: 微软雅黑;
+    /*margin:20px 0;*/
+    
+    float:left;
+    line-height:80%;
+}
+left div:nth-child(2) p {
+    font-size:12px;
+    color:#767777;
+    font-family: 宋体;
+    line-height: 16px;
+    margin-top: 15px;
+}
+left div:nth-child(2) p img {
+    float: right;
+}
+right {
+    float: right;
+}
+right > div {
+    background-color: #eeedd6;
+    height: 325px;
+    width: 459px;
+    margin: 25px 0;
+}
+right ul li {
+    list-style-image: url("../img/task6_icon.png");
+}
+right ul li span {
+    font-size: 12px;
+    color: #5a5b5b;
+    font-style: italic;
+}
+/*这里不用padding怎么实现？*/
+right list {
+    width: 100%;
+    padding: 25px 50px;
+    line-height: 36px;
+}
+block {
+    float: left;
+    background-color: #d45d5c;
+    width: 260px;
+    height: 160px;
+}
+block zero span:nth-child(1) {
+    font-size: 110px;
+    height: 86px;
+    color: #ffffff;
+    font-family: 微软雅黑;
+    border-right: solid 2px
 
+} 
+block zero {     
+float: left 
+} 
+block words span:nth-child(2) {     
+    font-size: 21px;     
+    color: #ffffff;     
+    font-family: 微软雅黑;     
+    float: right; 
+}
+block words {     
+    float: right; 
+}
