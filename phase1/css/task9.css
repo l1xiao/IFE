@@ -1,0 +1,95 @@
+* {
+    margin:0;
+    padding: 0;
+}
+container, aside, header, main, info, path, content {
+    display:block;
+}
+
+container {
+    min-width:1200px;
+    min-height: 900px;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+}
+
+header {
+    background-color:#2189bf;
+    width:100%;
+    position:absolute;
+    height: 56px;
+}
+.content {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+aside {
+    background-color: #2a2e3d;
+    width:260px;
+    height:100%;
+    position:relative;
+}
+
+info {
+    height: 150px;
+}
+
+menu {
+    width:100%;
+}
+
+main {
+    background-color: #eeeeed;
+    height: 100%;
+    position:absolute;
+    left:260px;
+    top:0;
+    right:0;
+    
+    
+}
+path {
+    height:30px;
+    background-color: white;
+    width: 100%;
+}
+.filter {
+    height:70px;
+    background-color: white;
+    margin-bottom: 8px;
+}
+content {
+    margin: 0 auto;
+    padding: 20px 60px;
+    
+}
+.history {
+    height:65px;
+    width:100%;
+}
+.left-arrow {
+    
+}
+.time {
+    display:inline;
+}
+content div ul {
+    display:inline;
+}
+content div a {
+    background-color: white;
+    width:30px;
+    height: 65px;
+    display:inline-block;
+}
+.history-button {
+    display:inline-block;
+}
