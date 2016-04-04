@@ -5,7 +5,7 @@
 body {
     font: 12px/1.5 Microsoft YaHei,arial,sans-serif,'宋体';
 }
-container, aside, header, main, info, path, content, project {
+container, aside, search, header, main, info, path, content, project, logo{
     display:block;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +28,21 @@ header {
     width:100%;
     position:absolute;
     height: 56px;
+}
+logo {
+    background-image: url("../img/task9_logo.png");
+    width:36px;
+    height:36px;
+    position:absolute;
+    top:10px;
+    left:50px;
+}
+search {
+    background-color: white;
+    margin:auto;
+    position:absolute;
+    right: 100px;
+    top: 14px;
 }
 .content {
     position: absolute;
