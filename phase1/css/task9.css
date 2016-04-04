@@ -2,7 +2,10 @@
     margin:0;
     padding: 0;
 }
-container, aside, header, main, info, path, content {
+body {
+    font: 12px/1.5 Microsoft YaHei,arial,sans-serif,'宋体';
+}
+container, aside, header, main, info, path, content, project {
     display:block;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -11,7 +14,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 container {
     min-width:1200px;
-    min-height: 900px;
     position:absolute;
     top:0;
     bottom:0;
@@ -44,7 +46,54 @@ aside {
 info {
     height: 150px;
 }
-
+.user-photo {
+    width:40%;
+    height:90px;
+    overflow:auto;
+    padding-top:16px;
+    box-sizing: border-box;
+    float:left;
+}
+.user-photo div div{
+    width:56px;
+    height: 56px;
+    border-radius:50%;
+    background-color: #b2aaad;
+    border: solid 2px #2a2e3d;
+    box-sizing: border-box;
+}
+.photo {
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+    border: 1px solid #b2aaad;
+    float:right;
+}
+.nickname {
+    width:60%;
+    float:right;
+    height:90px;
+    line-height: 90px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color:white;
+}
+.half {
+    width:50%;
+}
+info p {
+    color: #6e8095;
+}
+.collection p{
+    padding-left:70px;
+    box-sizing: border-box;
+    border-right: 1px solid  #313645;
+}
+.fans p {
+    padding-left:35px;
+    
+}
 menu {
     width:100%;
 }
@@ -56,6 +105,7 @@ main {
     left:260px;
     top:0;
     right:0;
+    overflow-y: auto;
 }
 path {
     height:30px;
@@ -123,12 +173,14 @@ content div a {
     top:0;
 }
 .statistic {
-    /*这里为什么不能用width:100%*/
+    /*这里为什么不能用width:100%*/    
     position:relative;
-    float:left;
-    width:100%;
-    height:100%;
+    /*float:left;*/
+    /*width:100%;*/
+    /*height:100%;*/
     margin-left: -2%;
+    overflow: auto;
+    margin-bottom: 8px;
 }
 .item {
     float:left;
@@ -140,10 +192,43 @@ content div a {
 }
 
 .item div {
-    background-color: white;    
+    background-color: white;
     height:90%;
     width: 90%;
     position:absolute;
     bottom: 0;
     right: 0;
+}
+group {
+    overflow:auto;
+}
+.left {
+    float:left;
+}
+.right {
+    float:right;
+}
+.table {
+    height:317px;
+    background-color: white;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px solid #d7d5d6;
+    overflow: hidden;
+}
+.large {
+    width:59%;    
+}
+.small {
+    width:40%;
+}
+.title {
+    background-color: #f4f5f6;
+    height:39px;
+    border-bottom: 1px solid #e6e6e8;
+    padding-left:20px;
+    line-height: 39px;
+    color: #aaa;
+    
 }
