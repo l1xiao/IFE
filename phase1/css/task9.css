@@ -1,11 +1,10 @@
-* {
+
+body {
+    font: 12px/1.5 Microsoft YaHei,arial,sans-serif,'宋体';
     margin:0;
     padding: 0;
 }
-body {
-    font: 12px/1.5 Microsoft YaHei,arial,sans-serif,'宋体';
-}
-container, aside, search, header, main, info, path, content, project, logo{
+container, aside, search, header, main, info, path, content, project, logo, login, menu{
     display:block;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -38,11 +37,34 @@ logo {
     left:50px;
 }
 search {
+    position:raletive;
+    float:left;
+    
+}
+search input {
     background-color: white;
-    margin:auto;
+    border:none;
+    padding: 0 10px 0 30px;
+    border-radius: 50px;
+    height: 30px;
+    width:170px;
+    box-sizing: border-box;
+}
+search img {
     position:absolute;
-    right: 100px;
-    top: 14px;
+    top:7px;
+    left:10px;
+}
+login {
+    float:right;
+    position:relative;
+    top:7px;
+    right:-20px;  
+}
+header div{
+    position:absolute;
+    top:14px;
+    right:100px;
 }
 .content {
     position: absolute;
@@ -99,6 +121,7 @@ info {
 }
 info p {
     color: #6e8095;
+    margin:0;
 }
 .collection p{
     padding-left:70px;
@@ -110,9 +133,27 @@ info p {
     
 }
 menu {
-    width:100%;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    color:#6e8095;
+    padding:0;
+    margin:0;    
 }
-
+menu dl {
+    padding: 5px 0 5px 45px;
+}
+.child dl {
+    padding: 0;
+}
+menu dl:first-child {
+    background: #383d4e;
+    
+} 
 main {
     background-color: #eeeeed;
     height: 100%;

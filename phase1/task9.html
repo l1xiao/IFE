@@ -11,14 +11,15 @@
     <container>
         <header>
             <logo></logo>
-            <search>
-                <img src="img/task9_zoom.png" alt="">
-                <input type="text">
-            </search>
-            <login>
-                <img src="img/task9_login.png" alt="">
-                 登入
-            </login>
+            <div>
+                <search>
+                    <img src="img/task9_zoom.png" alt="">
+                    <input type="text">
+                </search>
+                <login>
+                    <img src="img/task9_login.png" alt=""> 登入
+                </login>
+            </div>
         </header>
         <div class="content">
             <aside>
@@ -40,15 +41,30 @@
                 </info>
                 <menu>
                     <dl>
-                        <dt></dt>
-                        <dd></dd>
-                        <dt></dt>
+                        <dt class="active">
+                            <img src="img/task9_file_open.png" alt="">
+                            <span>个人报表</span>
+                        </dt>
+                        <dd class="child">
+                            <dl>
+                                <dt class="active">
+                                    <img src="img/task9_open_arrow.png" alt="">
+                                    <img src="" alt="">
+                                    <span>文件夹一</span>
+                                </dt>
+                                <dd class="active">
+                                    <img src="" alt="">
+                                    <span>文档</span>
+                                </dd>
+                            </dl>
+                        </dd>
+                        <dd>文件夹二</dd>
                     </dl>
-                    <dl></dl>
-                    <dl></dl>
-                    <dl></dl>
-                    <dl></dl>
-                    <dl></dl>
+                    <dl><dt>个人收藏</dt></dl>
+                    <dl><dt>我的分享</dt></dl>
+                    <dl><dt>图库</dt></dl>
+                    <dl><dt>成长记录</dt></dl>
+                    <dl><dt>账户信息</dt></dl>
                 </menu>
             </aside>
             <main>
