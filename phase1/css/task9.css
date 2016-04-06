@@ -4,7 +4,7 @@ body {
     margin:0;
     padding: 0;
 }
-container, aside, search, header, main, info, path, content, project, logo, login, menu{
+container, aside, button, change, search, header, block, main, info, path, content, project, logo, login, menu{
     display:block;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -191,12 +191,72 @@ path {
     background-color: white;
     margin-bottom: 8px;
     overflow:auto;
+    position:relative;
+    box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 0.1);
+    padding-top:2px;
 }
 .filter div:nth-child(-n + 4) {
     width:25%;
     float:left;
+    height: 70px;
+    box-sizing: border-box;
+    position:relative
 }
-
+.filter div:first-child {
+    box-sizing: border-box;
+    padding: 10px 0 0 6%;    
+}
+change {
+    position:absolute;
+    left:160px;
+    top:16px;
+}
+change span {
+    display:inline-block;
+    position:absolute;
+    top:9px;
+    left:13px;
+    color:white;
+}
+.row-one {
+    box-sizing: border-box;
+    margin:10px 0 0 0;
+}
+.row-two {
+    box-sizing: border-box;
+    margin:4px 0 0 0;
+}
+.filter div:nth-child(2) span {
+    width:120px;
+    display: inline-block;
+}
+.row-one span:first-child {
+    width:130px;
+    margin: 0 5px;
+}
+.row-one span:nth-child(2) {
+    width: 70px;
+    margin:0 5px;
+}
+.row-two span:nth-child(2) {
+    width:118px;
+    margin: 0 5px;
+}
+.row-two span:nth-child(1) {
+    width: 70px;
+    margin:0 5px;
+}
+.filter button {
+    position:absolute;
+    right:30px;
+    top:22px;
+    border: solid #2189bf 1px;
+    background-color:#2189bf;
+    color:white;
+    font-size: 12px;
+    padding: 3px 12px;
+    border-radius: 2px;
+}
 content {
     margin: 0 auto;
     padding: 20px 60px;
@@ -205,9 +265,10 @@ content {
 .select {
     position:relative;
     border: 1px solid #aaa;
-    line-height: 23px;
     height:23px;
-    padding: 2px 14px 2px 5px;
+    padding: 3px 15px 3px 6px;
+    box-sizing: border-box;
+    display:inline-block;
 }
 .select img {
     position:absolute;
@@ -220,6 +281,31 @@ content {
     position:relative;
     margin-bottom: 8px;
 }
+item {
+    box-sizing: border-box;
+    position:relative;
+}
+item p {
+    margin:0;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    text-align: center;
+    padding:6px;
+}
+item h2 {
+    position:absolute;
+    top:10px;
+    font-size: 22px;
+    color:#ec6500;
+    text-align: center;
+    left:0;
+    right:0;
+}
+div item:first-child p{
+    border-top:4px solid #2189bf;
+}
 .list {
     position:relative;
     height:100%;
@@ -229,11 +315,20 @@ content {
     position:absolute;
     left:0;
 }
+.left-arrow img {
+    position:absolute;
+    top:24px;
+    left:8px;
+}
+.right-arrow img {
+    position:absolute;
+    top:24px;
+    left:8px;
+}
 .right-arrow {
     position:absolute;
     right:0;
 }
-
 .list div {
     position:absolute;
     left:38px;
@@ -263,6 +358,16 @@ content div a {
     position: absolute;
     right:0;
     top:0;
+    box-sizing: border-box;
+    padding: 17px; 
+    line-height: 32px;
+    text-align: vertical-center;
+}
+.history-button span {
+    display:inline-block;
+    position:relative;
+    top:-8px;
+    left:5px;
 }
 .statistic {
     /*这里为什么不能用width:100%*/    
@@ -282,7 +387,59 @@ content div a {
     position:relative;
     box-sizing:border-box;
 }
-
+.filter div:nth-child(1) {
+    width:25%;
+}
+.item div {
+    box-sizing: border-box;
+}
+.filter div:nth-child(2) {
+    width:25%;
+}
+.filter div:nth-child(3) {
+    width:40%;
+}
+.filter div:nth-child(4) {
+    width:10%;
+}
+.item div {
+    box-sizing: border-box;
+}
+.green {
+    border-left: #43b29e 3px solid;
+}
+.blue {
+    border-left: #2189bf 3px solid;
+}
+.red {
+    border-left: #d04a36 3px solid;
+}
+.byellow {
+    background-color: #e2cd46;
+}
+block {
+    width:60px;
+    height:46px;
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+.item div:first-child {
+    padding-left:10px;
+    box-sizing: border-box;
+}
+.bgreen {
+    background-color: #43b29e;
+}
+.bblue {
+    background-color: #2189bf;
+}
+.bred {
+    background-color: #d04a36;
+}
+.yellow {
+    background-color: #e2cd46;
+}
 .item div {
     background-color: white;
     height:90%;
