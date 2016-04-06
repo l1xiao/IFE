@@ -147,12 +147,27 @@ menu {
 menu dl {
     padding: 5px 0 5px 45px;
 }
+menu dl, dt, dd {
+    line-height: 28px;
+    margin:0;
+}
+menu img {
+    position:relative;
+    top:2px;
+    left:-2px;
+}
+.active {
+    color:white;
+}
+
 .child dl {
-    padding: 0;
+    padding-left: 28px;
+}
+.child dl dd {
+    padding-left: 28px;
 }
 menu dl:first-child {
     background: #383d4e;
-    
 } 
 main {
     background-color: #eeeeed;
@@ -167,16 +182,37 @@ path {
     height:30px;
     background-color: white;
     width: 100%;
+    padding-left:30px;
+    box-sizing: border-box;
+    line-height: 30px;
 }
 .filter {
     height:70px;
     background-color: white;
     margin-bottom: 8px;
+    overflow:auto;
 }
+.filter div:nth-child(-n + 4) {
+    width:25%;
+    float:left;
+}
+
 content {
     margin: 0 auto;
     padding: 20px 60px;
-    
+    overflow: auto;
+}
+.select {
+    position:relative;
+    border: 1px solid #aaa;
+    line-height: 23px;
+    height:23px;
+    padding: 2px 14px 2px 5px;
+}
+.select img {
+    position:absolute;
+    right: 4px;
+    top:9px;
 }
 .history {
     height:65px;
